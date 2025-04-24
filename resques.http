@@ -1,0 +1,40 @@
+### Load users from JSONPlaceholder and store in DB
+GET http://localhost:3000/load
+
+### Delete all users
+DELETE http://localhost:3000/users
+
+### Delete a specific user by ID (Replace `1` with actual user ID)
+DELETE http://localhost:3000/users/1
+
+### Get a user by ID (Replace `1` with actual user ID)
+GET http://localhost:3000/users/1
+
+### Add a new user (Change user data as needed)
+PUT http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "id": 11,
+  "name": "John Doe",
+  "username": "johndoe",
+  "email": "johndoe@example.com",
+  "address": {
+    "street": "123 Main St",
+    "suite": "Apt 101",
+    "city": "New York",
+    "zipcode": "10001",
+    "geo": {
+      "lat": "40.7128",
+      "lng": "-74.0060"
+    }
+  },
+  "phone": "123-456-7890",
+  "website": "johndoe.com",
+  "company": {
+    "name": "Doe Inc.",
+    "catchPhrase": "Innovate Your Future",
+    "bs": "technology solutions"
+  },
+  "posts": []
+}
